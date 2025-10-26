@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex 4 Corners + Center</title>
+  <style>
+   body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #eef2f3;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width:100%;
+      height: 100%;
+      padding: 10px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .box {
+      width: 80px;
+      height: 80px;
+      background: royalblue;
+      border-radius: 10px;
+    }
+
+    .center {
+      background: crimson;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    
+    <div class="box center"></div>
+
+    
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+</html>
